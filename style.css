@@ -1,0 +1,62 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 3px solid greenyellow;
+    margin: 0 auto;
+}
+
+#chicken {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background-image: url(./chicken.png);
+    background-size: 100px 50px;
+    top: 150px;
+}
+
+#egg {
+    position: relative;
+    width: 60px;
+    height: 80px;
+    background-image: url(./egg.png);
+    background-size: 60px 80px;
+    top: 90px;
+    left: 550px;
+    animation: eggwow 1s infinite linear;
+}
+
+@keyframes eggwow {
+    0% {
+        left: 550px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 130px;
+    }
+
+    50% {
+        top: 80px;
+    }
+
+    80% {
+        top: 130px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
